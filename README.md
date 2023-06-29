@@ -5,13 +5,10 @@ This container normalizes the data contained in the file published by Binary Edg
 This contianer is designed to run on Docker and requries either Docker or Docker Desktop.  
 
 # Deployment and Use
-1. Clone the Repsitory.
-2. Build with `docker compose`
-    - Run `docker compose up -d`
-2. Build with `docker build`
-    - Run `docker build -t minionsparser .`
-    - Run `docker run -it --mount type=bind,source=/tmp/minionsparser/,target=/tmp/minionsparser --rm --name minionsparser-ded minionsparser`
+1. Clone the Repsitory
+2. Run `build-image.sh`
 3. Check /tmp/minionsparser for output
+4. Schedule the container to run at an interval of your choosing
 
 # Support Policy
 
