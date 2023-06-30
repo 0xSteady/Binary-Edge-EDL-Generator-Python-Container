@@ -1,8 +1,11 @@
-# Description: 
-This container normalizes the data contained in the file published by Binary Edge at https://api.binaryedge.io/v1/minions into a format that can be consumed as an EDL by the Palo Alto NGFW.  The output is written to /tmp/minionsparser/minions.edl.txt.
+# Description
+This is a single use python container that runs and exits.  It normalizes the data contained in the files published by Binary Edge at https://api.binaryedge.io/v1/minions and https://api.binaryedge.io/v1/minions-v6 into a format that can be consumed as an EDL by the Palo Alto NGFW.  The output is written to /tmp/minionsparser/minions-v4.edl.txt and /tmp/minionsparser/minions-v6.edl.txt.
 
 # Requirements
 This contianer is designed to run on Docker and requries either Docker or Docker Desktop.  
+
+# Dependencies
+This container depends on the script minionsparser.py which is maintained in https://github.com/0xSteady/minionsparser.py
 
 # Deployment and Use
 1. Clone the Repsitory
